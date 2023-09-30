@@ -33,16 +33,27 @@ function Product() {
         {product && (
           <>
             <div className="product-page__product">
-              <h3 className="product_title">Title: {product.title} </h3>
-              <p className="product_id">ID: {id}</p>
-              <p className="product_description">Description: {product.description}</p>
               <div className="product_image">
-                <img className="image" src="./images/" />
+                <img className="image" src="http://images.amazon.com/images/P/0596004605.01._SCMZZZZZZZ_.jpg" />
               </div>
+              <div className="product_title1">
+                <h3 className="product_title">Title: {product.title} </h3>
+              </div>
+              <div className="product_id1">
+                <p className="product_id">ID: {id}</p>
+              </div>
+              <div className="product_description">
+                <p className="product_description">Description: {product.description}</p>
+              </div>
+              <div>
+                <Link to={`/checkout/${product.id}`}>
+                  <button>Buy Now</button>
+                </Link>
+              </div>
+
             </div>
-            <Link to={`/checkout/${product.id}`}>
-              <button>Buy Now</button>
-            </Link>
+
+
           </>
         )}
       </div>
