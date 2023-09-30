@@ -68,3 +68,10 @@
        in the grid from stretching vertically. */
     align-items: start;
 }
+
+
+@media screen and (max-width: 100px) {
+    .product-page__product {
+        grid-template-columns: 1fr;
+    }
+}
