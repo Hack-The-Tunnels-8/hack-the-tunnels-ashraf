@@ -13,6 +13,7 @@ import {
 } from "./pages";
 import { AccountProvider } from "./context";
 import "./index.scss";
+import { Error404 } from "./pages/Error404";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>404</div>,
+    element: <Error404 />,
   },
 ]);
 
