@@ -33,9 +33,12 @@ function Product() {
         {product && (
           <>
             <div className="product-page__product">
-              <h3>Title: {product.title} </h3>
-              <p>ID: {id}</p>
-              <p>Description: {product.description}</p>
+              <h3 className="product_title">Title: {product.title} </h3>
+              <p className="product_id">ID: {id}</p>
+              <p className="product_description">Description: {product.description}</p>
+              <div className="product_image">
+                <img className="image" src="./images/" />
+              </div>
             </div>
             <Link to={`/checkout/${product.id}`}>
               <button>Buy Now</button>
@@ -43,7 +46,7 @@ function Product() {
           </>
         )}
       </div>
-     
+
     </Page>
   );
 }
