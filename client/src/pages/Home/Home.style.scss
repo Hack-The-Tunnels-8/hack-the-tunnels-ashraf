@@ -11,36 +11,44 @@
     a {
       text-decoration: none;
       color: inherit;
-      
+
     }
   }
-   /* The animation code */
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+
+  /* The animation code */
+  @keyframes example {
+    from {
+      background-color: red;
+    }
+
+    to {
+      background-color: yellow;
+    }
+  }
+
+  /* The element to apply the animation to */
+  &__title {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 400ms alternate infinite;
+  }
+
 }
 
-/* The element to apply the animation to */
-&__title {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation: example 400ms alternate infinite;
-} 
-  
-} 
 /* Default styles for light mode */
 body {
   background-color: lightblue;
   color: black;
   padding-right: 20px;
   padding-left: 20px;
+  margin-right: 20px;
 }
 
 /* Default styles for dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: black;
-      color: white;
+    background-color: black;
+    color: white;
   }
 }

@@ -11,8 +11,14 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar__logo">
         <Link to="/">
-          <img className="appLogo" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png"/>
-          </Link>
+          <img className="appLogo" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo.png" />
+        </Link>
+      </div>
+      <div className="header-middle-section">
+        <input className="search-bar" type="text" placeholder="Search.." />
+        <button className="search-button">
+          Enter
+        </button>
       </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
