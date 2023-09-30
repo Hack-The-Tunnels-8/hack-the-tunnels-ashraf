@@ -29,3 +29,16 @@
 } 
   
 } 
+/* Default styles for light mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Default styles for dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
