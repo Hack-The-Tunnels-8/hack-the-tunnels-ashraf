@@ -30,8 +30,7 @@
 
 }
 
-.signUp_button,
-.login_button {
+.signUp_button {
   flex: 1;
   background-color: aqua;
   /* Green */
@@ -40,6 +39,17 @@
   border-radius: 2px;
   border-color: black;
 
+}
+
+.login_button {
+  flex: 1;
+  background-color: aqua;
+  /* Green */
+  color: black;
+  padding: 4px;
+  border-radius: 2px;
+  border-color: black;
+  margin-right: 30px;
 }
 
 .header-middle-section {
