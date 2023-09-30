@@ -14,8 +14,10 @@ function Login() {
 
   const attemptLogin = async () => {
     try {
-      const message = await login("admin@email.com", "password");
-      setMessage(message);
+      if (email === 'admin@email.com' && password === 'password') {
+        const message = await login("admin@email.com", "password");
+        setMessage("Login Successful");
+      }
     } catch (error) {
       setMessage('Invalid email or password');
     }
