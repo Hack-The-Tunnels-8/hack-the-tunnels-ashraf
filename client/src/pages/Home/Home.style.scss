@@ -1,6 +1,7 @@
 .home-page {
   &__title {
     color: red;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
   &__products {
@@ -10,6 +11,21 @@
     a {
       text-decoration: none;
       color: inherit;
+      
     }
   }
+   /* The animation code */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
+
+/* The element to apply the animation to */
+&__title {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example 400ms alternate infinite;
+} 
+  
+} 
